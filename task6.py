@@ -5,7 +5,7 @@ import time
 def rondom (n2):
     list = []
     for i in range (1, n2+1):
-        list.append(round(i * (time.time() * 1000)%100))
+        list.append(round(i * (time.time() * 1000)%100)) # Здесь процентом выбираешь двузначные, однозначные и т.д. Потом можно будет докрутить в пределах выбранных
     return list
     
 list = rondom(8)
